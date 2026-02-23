@@ -11,7 +11,7 @@ For each clause:
 ---
 
 ### 1. `SELECT`
-   
+
 **Description:** `SELECT *` returns all columns from the provided table. You can also do `SELECT column_name_1, column_name_2` to return specific columns from the provided table.
 
 **Example:**
@@ -37,7 +37,7 @@ CREATE TABLE friends (
 
 ### 3. `INSERT INTO` — assigned to Ainslie
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -47,7 +47,7 @@ CREATE TABLE friends (
 
 ### 4. `UPDATE` — assigned to Babz
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -57,7 +57,7 @@ CREATE TABLE friends (
 
 ### 5. `DELETE FROM` — assigned to Haine
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -67,7 +67,7 @@ CREATE TABLE friends (
 
 ### 6. `GROUP BY` — assigned to Jackie
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -77,7 +77,7 @@ CREATE TABLE friends (
 
 ### 7. `ORDER BY` — assigned to Jenny
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -87,7 +87,7 @@ CREATE TABLE friends (
 
 ### 8. `INNER JOIN` — assigned to Megan
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -97,7 +97,7 @@ CREATE TABLE friends (
 
 ### 9. `LIMIT` — assigned to Mimi
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -107,7 +107,7 @@ CREATE TABLE friends (
 
 ### 10. `ON CONFLICT` — assigned to Priscilla
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -117,7 +117,7 @@ CREATE TABLE friends (
 
 ### 11. `LIKE` — assigned to Stephanie
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -127,10 +127,12 @@ CREATE TABLE friends (
 
 ### 12. `COUNT` — assigned to Tee
 
-**Description:** 
+**Description:** The COUNT() aggregate function returns the total number of rows that match the specified criteria.
 
-**Example:**
+**Example:** For instance, to find the total number of employees who have more than 9 years of experience, the given query can be used.
 
 ```sql
-
+SELECT COUNT(*)
+FROM employees
+WHERE experience > 9;
 ```
