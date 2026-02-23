@@ -67,12 +67,19 @@ CREATE TABLE friends (
 
 ### 6. `GROUP BY` — assigned to Jackie
 
-**Description:** 
+**Description:** The GROUP BY clause will group records in a result set by identical values in one or more columns. It is often used in combination with aggregate functions to query information of similar records. The GROUP BY clause can come after FROM or WHERE but must come before any ORDER BY or LIMIT clause.
+
+The given query will count the number of movies per rating.
+
+
 
 **Example:**
 
 ```sql
-
+SELECT rating, 
+   COUNT(*) 
+FROM movies 
+GROUP BY rating;
 ```
 
 ### 7. `ORDER BY` — assigned to Jenny
