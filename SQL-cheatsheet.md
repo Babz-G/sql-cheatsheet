@@ -107,13 +107,29 @@ CREATE TABLE friends (
 
 ### 10. `ON CONFLICT` — assigned to Priscilla
 
-**Description:** 
+**Description:** `ON CONFLICT` checks for duplicate values. After a conflict is found, if you gave your query instructions as to how to handle the conflict, it will do so.
 
 **Example:**
+Lets say that you create a table of countries and `INSERT` the following.
+```sql
+INSERT INTO country_counts (country_name, count)
+VALUES	('Mexico', 1),
+		('Cuba', 1),
+        ('Brazil', 1),
+        ('Ethiopia', 1);
+```
+This creates a table with both a country and an assigned value into the `count` column. The data type of which, is `INTEGER`.
+Then, lets say that you attempt to `INSERT` 'mexico' again.
 
 ```sql
-
+INSERT INTO country_counts (country_name, count)
+VALUES ('Mexico', 1)
+ON CONFLICT (country_name)
+DO UPDATE SET count = country_counts.count + 1
+RETURNING count;
 ```
+Instead of crashing and returning an error, our `INSERT` will instead see the conflict. In this case, specifically a conflict in our `country_name`. The following line gives the query instructions to follow. In this query, we take the count value and add 1 to the `INTEGER`. Following that, we have the query return the value of `count`.
+
 
 ### 11. `LIKE` — assigned to Stephanie
 
