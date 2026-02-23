@@ -11,7 +11,7 @@ For each clause:
 ---
 
 ### 1. `SELECT`
-   
+
 **Description:** `SELECT *` returns all columns from the provided table. You can also do `SELECT column_name_1, column_name_2` to return specific columns from the provided table.
 
 **Example:**
@@ -37,7 +37,7 @@ CREATE TABLE friends (
 
 ### 3. `INSERT INTO` — assigned to Ainslie
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -47,17 +47,20 @@ CREATE TABLE friends (
 
 ### 4. `UPDATE` — assigned to Babz
 
-**Description:** 
+**Description:**
+UPDATE modifies existing records in a table. SET defines which columns to change & WHERE targets specific rows
 
 **Example:**
 
 ```sql
-
+UPDATE friends
+SET name = 'Babz'
+WHERE friend_id = 1;
 ```
 
 ### 5. `DELETE FROM` — assigned to Haine
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -67,7 +70,7 @@ CREATE TABLE friends (
 
 ### 6. `GROUP BY` — assigned to Jackie
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -77,7 +80,7 @@ CREATE TABLE friends (
 
 ### 7. `ORDER BY` — assigned to Jenny
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -87,7 +90,7 @@ CREATE TABLE friends (
 
 ### 8. `INNER JOIN` — assigned to Megan
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -97,7 +100,7 @@ CREATE TABLE friends (
 
 ### 9. `LIMIT` — assigned to Mimi
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -107,7 +110,7 @@ CREATE TABLE friends (
 
 ### 10. `ON CONFLICT` — assigned to Priscilla
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -117,7 +120,7 @@ CREATE TABLE friends (
 
 ### 11. `LIKE` — assigned to Stephanie
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -127,7 +130,7 @@ CREATE TABLE friends (
 
 ### 12. `COUNT` — assigned to Tee
 
-**Description:** 
+**Description:**
 
 **Example:**
 
