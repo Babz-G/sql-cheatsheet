@@ -49,7 +49,6 @@ VALUES ('Asia Adams', '2013-06-21');
 ### 4. `UPDATE` — assigned to Babz
 
 **Description:**
-UPDATE modifies existing records in a table. SET defines which columns to change & WHERE targets specific rows
 
 **Example:**
 
@@ -165,10 +164,12 @@ WHERE name LIKE 'S%';
 
 ### 12. `COUNT` — assigned to Tee
 
-**Description:**
+**Description:** The COUNT() aggregate function returns the total number of rows that match the specified criteria.
 
-**Example:**
+**Example:** For instance, to find the total number of employees who have more than 9 years of experience, the given query can be used.
 
 ```sql
-
+SELECT COUNT(*)
+FROM employees
+WHERE experience > 9;
 ```
