@@ -87,10 +87,14 @@ GROUP BY rating;
 ### 7. `ORDER BY` — assigned to Jenny
 
 **Description:** 
+The ORDER BY clause in SQL is used to sort the result set of a query in a specific order based on one or more columns. This clause is commonly used to arrange data in ascending or descending order, allowing you to control the presentation of data for better analysis and readability.
 
 **Example:**
 
-```sql
+```
+SELECT *
+FROM Customers
+ORDER BY country;
 
 ```
 
