@@ -37,12 +37,13 @@ CREATE TABLE friends (
 
 ### 3. `INSERT INTO` — assigned to Ainslie
 
-**Description:** 
+**Description:** `INSERT INTO` adds a new row of information to a table that already exists. You have to write the table name, list the columns you want to fill in, and then write the values you want to add.
 
 **Example:**
 
 ```sql
-
+INSERT INTO daughter (name, birthday)
+VALUES ('Asia Adams', '2013-06-21');
 ```
 
 ### 4. `UPDATE` — assigned to Babz
