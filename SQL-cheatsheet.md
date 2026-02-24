@@ -106,11 +106,14 @@ GROUP BY rating;
 
 ### 9. `LIMIT` — assigned to Mimi
 
-**Description:** 
+**Description:** LIMIT clause is used to control the number of records returned by a query. It helps you retrieve only a specific portion of data instead of the entire result set, which is especially useful when working with large databases.
 
 **Example:**
-
 ```sql
+SELECT *
+FROM employees
+WHERE salary > 60000
+LIMIT 10
 
 ```
 
