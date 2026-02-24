@@ -11,7 +11,7 @@ For each clause:
 ---
 
 ### 1. `SELECT`
-   
+
 **Description:** `SELECT *` returns all columns from the provided table. You can also do `SELECT column_name_1, column_name_2` to return specific columns from the provided table.
 
 **Example:**
@@ -48,7 +48,7 @@ VALUES ('Asia Adams', '2013-06-21');
 
 ### 4. `UPDATE` — assigned to Babz
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -100,7 +100,7 @@ ORDER BY country;
 
 ### 8. `INNER JOIN` — assigned to Megan
 
-**Description:** 
+**Description:**
 
 **Example:**
 
@@ -162,10 +162,12 @@ WHERE name LIKE 'S%';
 
 ### 12. `COUNT` — assigned to Tee
 
-**Description:** 
+**Description:** The COUNT() aggregate function returns the total number of rows that match the specified criteria.
 
-**Example:**
+**Example:** For instance, to find the total number of employees who have more than 9 years of experience, the given query can be used.
 
 ```sql
-
+SELECT COUNT(*)
+FROM employees
+WHERE experience > 9;
 ```
