@@ -57,12 +57,13 @@ CREATE TABLE friends (
 
 ### 5. `DELETE FROM` — assigned to Haine
 
-**Description:** 
+**Description:** `DELETE FROM` removes one or more rows from the table. You can use it with a `WHERE` clause to delete specific rows, or without one to delete all rows in the table.
 
 **Example:**
 
 ```sql
-
+DELETE FROM friends 
+WHERE friend_id = 3;
 ```
 
 ### 6. `GROUP BY` — assigned to Jackie
