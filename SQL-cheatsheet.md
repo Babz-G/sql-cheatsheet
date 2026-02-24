@@ -117,11 +117,14 @@ CREATE TABLE friends (
 
 ### 11. `LIKE` — assigned to Stephanie
 
-**Description:** 
+**Description:** `LIKE` is used in a `WHERE` clause to search for a specific pattern in a column. The % symbol is a wildcard that represents more characters. This example shows all names in the friends table that start with "S".
 
 **Example:**
 
 ```sql
+SELECT *
+FROM friends
+WHERE name LIKE 'S%';
 
 ```
 
